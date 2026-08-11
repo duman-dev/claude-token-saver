@@ -1,20 +1,23 @@
-# Claude Token Saver
 <p align="center">
-  <img src="./banner.png" alt="Claude Token Saver Banner" width="100%" style="max-width: 830px; height: auto;">
-</p>
-<p align="center">
-  <img src="banner.png" alt="Claude Token Saver" width="600" />
+  <img src="banner.png" alt="Claude Token Saver Banner" width="100%" style="max-width: 1000px; height: auto;">
 </p>
 
 # <p align="center">Claude Token Saver</p>
 
 <p align="center">
-  <b>Claude Token Saver</b> is a collection of confirmed, practical methods to reduce token usage when working with Claude and Claude Code. No speculation — only techniques that actually work.
+  <b>Claude Token Saver</b> is a collection of practical methods to reduce token usage when working with Claude and Claude Code. Tested and confirmed by developers in real workflows — no guarantees, but they work.
 </p>
 
 <p align="center">
-  English &nbsp;|&nbsp; <a href="README.tr.md">Türkçe</a>
+  <a href="README.md">🇬🇧</a> &nbsp;&nbsp;
+  <a href="README.tr.md">🇹🇷</a> &nbsp;&nbsp;
+  <a href="README.de.md">🇩🇪</a> &nbsp;&nbsp;
+  <a href="README.ru.md">🇷🇺</a>
 </p>
+
+---
+
+> **Note:** These methods come from hands-on testing and observation. We've seen them work consistently, but your results may vary based on usage patterns, session length, and model version.
 
 ---
 
