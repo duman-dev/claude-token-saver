@@ -80,7 +80,8 @@ Every message carries the full conversation history. After 15–20 messages, mos
 **Fix:** Before starting a new chat, send this prompt to get a machine-optimized handoff:
 
 ```
-Summarize our entire conversation so I can paste it into a
+Summarize our entire conversation with language user employs
+so I can paste it into a
 new chat and continue without losing context. Include:
 (1) the original goal or problem
 (2) key decisions made and why
