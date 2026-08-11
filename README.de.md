@@ -37,12 +37,14 @@ Claudes Standardstil ist gesprächig. Jede Einleitung, Zusammenfassung und "Ich 
 **Lösung:** Füge dies in deine `CLAUDE.md` (Claude Code) oder **Einstellungen → Profil → Benutzereinstellungen** (claude.ai) ein:
 
 ```
-Antworte auf prägnanteste Weise möglich. Überspringe Höflichkeiten,
-Einleitungen und Zusammenfassungen meiner Frage. Verwende keine
-Phrasen wie "Ich helfe dir gerne", "Großartig" oder "Lass mich erklären".
-Entferne Artikel und Füllwörter überall dort, wo der Sinn klar bleibt.
-Bevorzuge kurze, prägnante Sätze. Wenn ein Tool-Aufruf nötig ist,
-führe ihn aus und zeige nur das Ergebnis. Erläutere nicht deine Schritte.
+Reply in the language user employs. Use most concise form possible.
+Skip pleasantries, preambles, recaps.
+No "I'd be happy to", "Great question", "Let me explain".
+Drop articles, filler words wherever meaning stays clear.
+Prefer short declarative sentences. If tool call needed,
+run first and show only result. Do not narrate steps.
+Prioritize code/data format over prose.
+No explanations unless essential. Output only.
 ```
 
 **Vorher:**
