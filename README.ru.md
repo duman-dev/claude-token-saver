@@ -80,15 +80,16 @@ No explanations unless essential. Output only.
 **Решение:** Перед началом нового чата отправь этот запрос для оптимизированной передачи:
 
 ```
-Резюмируй весь наш разговор так, чтобы я мог вставить его в
-новый чат и продолжить без потери контекста. Включи:
-(1) исходную цель или проблему
-(2) ключевые решения и их обоснование
-(3) весь код, конфиг и данные, дословно, в блоках кода
-(4) открытые вопросы и следующие шаги
-Используй короткие разделы с заголовками. Пропускай
-светскую беседу и разведочные отступления. Оптимизируй
-резюме для Claude, читающего его "с нуля".
+Summarize our entire conversation with language user employs
+so I can paste it into a
+new chat and continue without losing context. Include:
+(1) the original goal or problem
+(2) key decisions made and why
+(3) any code, config, or data we settled on, verbatim, in code blocks
+(4) open questions and next steps
+Use short sections with headings. Skip small talk and
+exploratory tangents. Optimize the summary for a future
+Claude reading it cold.
 ```
 
 Вставь результат первым сообщением нового чата. Сеанс из 40 сообщений превратится в 200-словное резюме — история не тащится за собой.
