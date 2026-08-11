@@ -80,15 +80,16 @@ Her mesaj tam konuşma tarihçesini taşır. 15–20 mesajdan sonra, o tarihçen
 **Çözüm:** Yeni bir sohbete başlamadan önce, makine tarafından optimize edilmiş bir devredilme almak için bu istemi gönder:
 
 ```
-Tüm konuşmamızı özetle ve yeni sohbete yapıştırabilirim
-yoksa bağlam kaybetmeme devam edebilirim. İçer:
-(1) orijinal hedef veya problem
-(2) yapılan temel kararlar ve neden
-(3) sabitlenmiş kodlar, konfigurasyonlar, veriler (verbatim, kod bloklarında)
-(4) açık sorular ve sonraki adımlar
-Başlık içeren kısa bölümler kullan. Küçük konuşmaları ve 
-araştırma teğetlerini atla. Özeti soğuk okuyacak bir Claude 
-için optimize et.
+Summarize our entire conversation with language user employs
+so I can paste it into a
+new chat and continue without losing context. Include:
+(1) the original goal or problem
+(2) key decisions made and why
+(3) any code, config, or data we settled on, verbatim, in code blocks
+(4) open questions and next steps
+Use short sections with headings. Skip small talk and
+exploratory tangents. Optimize the summary for a future
+Claude reading it cold.
 ```
 
 Sonucu yeni bir sohbetin ilk mesajı olarak yapıştır. 40 mesajlık bir oturum 200 sözcüklük bir özete — tarihçe taşınmaz.
