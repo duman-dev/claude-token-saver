@@ -80,15 +80,16 @@ Jede Nachricht trägt die vollständige Gesprächshistorie mit sich. Nach 15–2
 **Lösung:** Bevor du einen neuen Chat startest, sende diese Anfrage für eine maschinenoptimierte Übergabe:
 
 ```
-Fasse unser gesamtes Gespräch zusammen, damit ich es in einen
-neuen Chat einfügen und ohne Kontextverlust fortfahren kann. Schließe ein:
-(1) das ursprüngliche Ziel oder Problem
-(2) getroffene Schlüsselentscheidungen und warum
-(3) eingeigten Code, Konfiguration, Daten (Wort für Wort, in Code-Blöcken)
-(4) offene Fragen und nächste Schritte
-Verwende kurze Abschnitte mit Überschriften. Überspringe Smalltalk und
-Erkundungstangenten. Optimiere die Zusammenfassung für einen Claude,
-der sie kalt liest.
+Summarize our entire conversation with language user employs
+so I can paste it into a
+new chat and continue without losing context. Include:
+(1) the original goal or problem
+(2) key decisions made and why
+(3) any code, config, or data we settled on, verbatim, in code blocks
+(4) open questions and next steps
+Use short sections with headings. Skip small talk and
+exploratory tangents. Optimize the summary for a future
+Claude reading it cold.
 ```
 
 Füge das Ergebnis als erste Nachricht eines neuen Chats ein. Eine 40-Nachrichten-Sitzung wird zu einer 200-Wort-Zusammenfassung — keine History mehr mitgeschleppt.
