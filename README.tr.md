@@ -8,14 +8,14 @@
   <b>Claude Token Saver</b>, Claude ve Claude Code kullanırken token kullanımını azaltmak için pratik yöntemler sunuyor. Gerçek iş akışlarında geliştiriciler tarafından test edilmiş ve doğrulanmış — garantisi yok ama çalışıyor.
 </p>
 
-<p align="center">
-  <a href="README.md">🇬🇧</a> &nbsp;&nbsp;
-  <a href="README.tr.md">🇹🇷</a> &nbsp;&nbsp;
-  <a href="README.de.md">🇩🇪</a> &nbsp;&nbsp;
-  <a href="README.ru.md">🇷🇺</a>
-</p>
-
 ---
+
+<h1 align="center">
+
+[🇺🇸](https://github.com/duman-dev/claude-token-saver/blob/main/README.md) [🇷🇺](https://github.com/duman-dev/claude-token-saver/blob/main/README.ru.md) [🇩🇪](https://github.com/duman-dev/claude-token-saver/blob/main/README.de.md) [🇹🇷](https://github.com/duman-dev/claude-token-saver/blob/main/README.tr.md)
+
+</h1>
+
 
 > **Not:** Bu yöntemler uygulamadan gelen deneyim ve gözlemlerdir. Tutarlı bir şekilde çalıştığını görmüştük, ancak sonuçlar kullanım alışkanlıkları, oturum uzunluğu ve model versiyonuna göre değişebilir.
 
