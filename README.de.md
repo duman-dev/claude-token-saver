@@ -8,14 +8,11 @@
   <b>Claude Token Saver</b> ist eine Sammlung praktischer Methoden zur Reduzierung des Token-Verbrauchs bei der Verwendung von Claude und Claude Code. In echten Arbeitsabläufen von Entwicklern getestet und bestätigt — keine Garantie, aber es funktioniert.
 </p>
 
-<p align="center">
-  <a href="README.md">🇬🇧</a> &nbsp;&nbsp;
-  <a href="README.tr.md">🇹🇷</a> &nbsp;&nbsp;
-  <a href="README.de.md">🇩🇪</a> &nbsp;&nbsp;
-  <a href="README.ru.md">🇷🇺</a>
-</p>
+<h1 align="center">
 
----
+[🇺🇸](https://github.com/duman-dev/claude-token-saver/blob/main/README.md) [🇷🇺](https://github.com/duman-dev/claude-token-saver/blob/main/README.ru.md) [🇩🇪](https://github.com/duman-dev/claude-token-saver/blob/main/README.de.md) [🇹🇷](https://github.com/duman-dev/claude-token-saver/blob/main/README.tr.md)
+
+</h1>
 
 > **Hinweis:** Diese Methoden basieren auf praktischer Erfahrung und Beobachtung. Wir haben gesehen, dass sie konsistent funktionieren, aber die Ergebnisse können je nach Nutzungsmuster, Sitzungsdauer und Modellversion variieren.
 
