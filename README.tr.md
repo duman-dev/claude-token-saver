@@ -28,6 +28,7 @@
 * [**2 — Takip Yerine Düzenleme**](#2--takip-yerine-düzenleme): Başarısız denemeleri biriktirmek yerine değiştir.
 * [**3 — Bağlam Sıkıştır**](#3--bağlam-sıkıştır): İlerlemeyi kaybetmeden uzun oturumları sıfırla.
 * [**4 — Bölmek Yerine Topla**](#4--bölmek-yerine-topla): Birçok mesaj yerine ilgili görevleri bir mesajda birleştir.
+* [**5 — Caveman Gibi Skill'lerle Token Optimizasyonu**](#5--caveman-gibi-skillerle-token-optimizasyonu): Girdi ve çıktıyı özel bir token optimizasyon skill'i/proxy'siyle sıkıştır.
 
 ---
 
@@ -116,6 +117,28 @@ Sen: Yazım hatasını düzelt, docstring ekle ve tür ipuçları ekle
 ```
 
 Yan fayda: Claude tam resmi bir kez gördüğü için çıktılar daha tutarlı olur.
+
+---
+
+## 5 — Caveman Gibi Skill'lerle Token Optimizasyonu
+
+Yukarıdaki yöntemler, Claude'u *nasıl kullandığından* kaynaklanan token israfını azaltır. Özel bir skill, konuşmanın her iki tarafında da *neyin gönderildiğini* sıkıştırabilir.
+
+[**Caveman**](https://github.com/juliusbrussee/caveman), ajan çıktısını sıkıştıran (daha kısa, "mağara adamı" tarzı yanıtlar — bazı görevlerde bildirilen ~%87 azalma) ve isteğe bağlı yerel proxy'si aracılığıyla girdiyi de modele ulaşmadan önce sıkıştıran açık kaynaklı bir skill/eklentidir (JSON, loglar, kod diff'leri ve uzun metinler özlerine indirgenir; orijinaller gerektiğinde yerel olarak geri alınabilir).
+
+**Çözüm:** Skill'i kur ve oturum bazında etkinleştir.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/v1.10.0/install.sh | bash
+```
+
+Ardından Claude Code'da:
+
+```
+/caveman [lite|full|ultra|off]
+```
+
+Tasarruflar iş yüküne göre değişir — projenin benchmark'larını bir garanti değil, başlangıç noktası olarak değerlendir ve gecikme veya maliyete duyarlı işlerde güvenmeden önce kendi baseline'ınla karşılaştır.
 
 ---
 

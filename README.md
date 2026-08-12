@@ -25,6 +25,7 @@
 * [**2 — Edit Instead of Follow-Up**](#2--edit-instead-of-follow-up): Replace failed attempts instead of stacking them.
 * [**3 — Context Compact**](#3--context-compact): Reset long sessions without losing progress.
 * [**4 — Batch Instead of Split**](#4--batch-instead-of-split): One message for related tasks instead of many.
+* [**5 — Optimizing Tokens with Skills like Caveman**](#5--optimizing-tokens-with-skills-like-caveman): Compress inputs and outputs with a dedicated token-optimization skill/proxy.
 
 ---
 
@@ -113,6 +114,28 @@ You: Fix the typo, add a docstring, and add type hints
 ```
 
 Side benefit: outputs are more consistent because Claude sees the full picture at once.
+
+---
+
+## 5 — Optimizing Tokens with Skills like Caveman
+
+The methods above cut token waste from *how you use* Claude. A dedicated skill can also compress *what gets sent*, on both sides of the conversation.
+
+[**Caveman**](https://github.com/juliusbrussee/caveman) is an open-source skill/plugin that compresses agent output (terser, "caveman-style" responses — reported ~87% reduction on some tasks) and, via its optional local proxy, compresses input before it reaches the model (JSON, logs, code diffs, and long text are trimmed to their essentials, with originals recoverable locally if needed).
+
+**Fix:** Install the skill and enable it per session.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/v1.10.0/install.sh | bash
+```
+
+Then in Claude Code:
+
+```
+/caveman [lite|full|ultra|off]
+```
+
+Savings vary by workload — treat the project's benchmarks as a starting point, not a guarantee, and compare against your own baseline before relying on it for latency- or cost-sensitive work.
 
 ---
 
