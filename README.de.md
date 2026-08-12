@@ -14,7 +14,8 @@
 
 </h1>
 
-> **Hinweis:** Diese Methoden basieren auf praktischer Erfahrung und Beobachtung. Wir haben gesehen, dass sie konsistent funktionieren, aber die Ergebnisse können je nach Nutzungsmuster, Sitzungsdauer und Modellversion variieren.
+> [!NOTE]
+> Diese Methoden basieren auf praktischer Erfahrung und Beobachtung. Wir haben gesehen, dass sie konsistent funktionieren, aber die Ergebnisse können je nach Nutzungsmuster, Sitzungsdauer und Modellversion variieren.
 
 ---
 

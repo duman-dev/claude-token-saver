@@ -14,7 +14,8 @@
 
 </h1>
 
-> **Note:** These methods come from hands-on testing and observation. We've seen them work consistently, but your results may vary based on usage patterns, session length, and model version.
+> [!NOTE]
+> These methods come from hands-on testing and observation. We've seen them work consistently, but your results may vary based on usage patterns, session length, and model version.
 
 ---
 

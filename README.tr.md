@@ -17,7 +17,8 @@
 </h1>
 
 
-> **Not:** Bu yöntemler uygulamadan gelen deneyim ve gözlemlerdir. Tutarlı bir şekilde çalıştığını görmüştük, ancak sonuçlar kullanım alışkanlıkları, oturum uzunluğu ve model versiyonuna göre değişebilir.
+> [!NOTE]
+> Bu yöntemler uygulamadan gelen deneyim ve gözlemlerdir. Tutarlı bir şekilde çalıştığını görmüştük, ancak sonuçlar kullanım alışkanlıkları, oturum uzunluğu ve model versiyonuna göre değişebilir.
 
 ---
 
