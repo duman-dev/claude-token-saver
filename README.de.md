@@ -24,6 +24,7 @@
 * [**2 — Bearbeiten statt Nachfolge**](#2--bearbeiten-statt-nachfolge): Ersetze gescheiterte Versuche, statt sie zu stapeln.
 * [**3 — Kontext komprimieren**](#3--kontext-komprimieren): Setze lange Sitzungen zurück, ohne Fortschritt zu verlieren.
 * [**4 — Batchen statt Splitten**](#4--batchen-statt-splitten): Kombiniere verwandte Aufgaben in einer Nachricht statt vielen.
+* [**5 — Token-Optimierung mit Skills wie Caveman**](#5--token-optimierung-mit-skills-wie-caveman): Komprimiere Ein- und Ausgaben mit einem dedizierten Token-Optimierungs-Skill/Proxy.
 
 ---
 
@@ -112,6 +113,28 @@ Du: Behebe den Tippfehler, füge eine Dokumentation und Typhinweise hinzu
 ```
 
 Seiteneffekt: Outputs sind konsistenter, weil Claude das volle Bild auf einmal sieht.
+
+---
+
+## 5 — Token-Optimierung mit Skills wie Caveman
+
+Die obigen Methoden reduzieren Token-Verschwendung durch *wie du* Claude nutzt. Ein dedizierter Skill kann zusätzlich komprimieren, *was gesendet wird* — auf beiden Seiten der Konversation.
+
+[**Caveman**](https://github.com/juliusbrussee/caveman) ist ein Open-Source-Skill/Plugin, das Agenten-Output komprimiert (knappere, "caveman-artige" Antworten — berichtete ~87 % Reduktion bei manchen Aufgaben) und über seinen optionalen lokalen Proxy auch den Input komprimiert, bevor er das Modell erreicht (JSON, Logs, Code-Diffs und lange Texte werden auf das Wesentliche gekürzt, Originale bleiben bei Bedarf lokal wiederherstellbar).
+
+**Lösung:** Installiere den Skill und aktiviere ihn pro Sitzung.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/v1.10.0/install.sh | bash
+```
+
+Dann in Claude Code:
+
+```
+/caveman [lite|full|ultra|off]
+```
+
+Die Einsparungen variieren je nach Workload — betrachte die Benchmarks des Projekts als Ausgangspunkt, nicht als Garantie, und vergleiche sie mit deiner eigenen Baseline, bevor du dich bei latenz- oder kostenkritischer Arbeit darauf verlässt.
 
 ---
 
